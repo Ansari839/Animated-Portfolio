@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Using latest LTS version
+          node-version: 20 # Latest LTS version
           cache: 'npm'
 
       - name: Install Dependencies
@@ -27,9 +27,6 @@ jobs:
 
       - name: Build Next.js Project
         run: npm run build
-
-      - name: Export Static Files
-        run: npm run export
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
