@@ -69,4 +69,4 @@ if [ $? -ne 0 ]; then
   git push -u origin main --force
 fi
 
-echo "🚀 Code pushed to GitHub: https://github.com/$GITHUB_USERNAME/$REPO_NAME"
+echo "🚀 Code pushed to GitHub: https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
